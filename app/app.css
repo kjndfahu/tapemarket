@@ -1,4 +1,9 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;700&family=Unbounded:wght@400;600;700&family=Golos+Text:wght@400;500;700&display=swap');
+
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
@@ -13,3 +18,5 @@ body {
     color-scheme: dark;
   }
 }
+
+
