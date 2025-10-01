@@ -59,5 +59,20 @@
   backdrop-filter: blur(2px);
 }
 
+.card-bg{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.line{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gold-glow{
+  background: radial-gradient(50% 50% at 50% 50%, #40280D 0%, rgba(64, 40, 13, 0) 100%);
+
+}
+
+
+
 
 

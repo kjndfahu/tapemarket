@@ -4,7 +4,7 @@ export const Rating = () => {
             className="flex items-center justify-between border-[1px] border-[#312E40] h-[51px] rounded-full bg-[#1717178C] gap-2 pl-6 pr-3 py-4 relative"
         >
             <p className="font-golos font-medium text-[16px]">Рейтинг:</p>
-            <div className="flex items-center gap-0.5">
+            <div className="flex items-center gap-1">
                 <img alt="purple-star" src="/img/purple-star.svg" />
                 <img alt="purple-star" src="/img/purple-star.svg" />
                 <img alt="purple-star" src="/img/purple-star.svg" />

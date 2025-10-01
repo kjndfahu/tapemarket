@@ -3,6 +3,7 @@ import { DepositAmount } from "./deposit-amount";
 import { DepositMethod } from "./deposit-method";
 import { DepositHistory } from "./deposit-history";
 import type {ModalProps} from "../../types/types";
+import { motion } from "framer-motion";
 
 export const ModalTopup = ({setIsOpen, isOpen}: ModalProps) => {
     useEffect(() => {
@@ -13,9 +14,22 @@ export const ModalTopup = ({setIsOpen, isOpen}: ModalProps) => {
     }, []);
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-md">
-            <div className="flex flex-col gap-4 font-golos p-4 sm:p-6 backdrop-blur-3xl bg-[#1717178C] border-[1px] border-[#312E40] rounded-[25px] w-[min(90vw,745px)] max-h-[min(90vh,839px)]">
-                <h3 className="text-[clamp(16px,2vw,18px)] sm:text-[20px] text-white leading-[1.1] font-semibold">Пополнение счета</h3>
+        <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-md"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
+            <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className="flex flex-col gap-4 font-golos p-4 sm:p-6 backdrop-blur-3xl bg-[#1717178C] border-[1px] border-[#312E40] rounded-[25px] w-[min(90vw,745px)] max-h-[min(90vh,839px)]"
+            >
+                <h3 className="text-[clamp(16px,2vw,18px)] sm:text-[20px] text-white leading-[1.1] font-semibold">
+                    Пополнение счета
+                </h3>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[53px]">
                     <DepositAmount />
                     <DepositMethod />
@@ -34,7 +48,7 @@ export const ModalTopup = ({setIsOpen, isOpen}: ModalProps) => {
                 <div className="overflow-y-auto max-h-[40vh]">
                     <DepositHistory />
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };

@@ -17,7 +17,7 @@ export const PricePopup = () => {
                         Цена от
                     </span>
                     <input
-                        className={`w-full bg-transparent outline-0 ring-0 text-white placeholder:text-white transition-all duration-200 ease-in-out ${
+                        className={`w-full bg-transparent outline-0 ring-0 text-white placeholder:text-[#FFFFFF99] transition-all duration-200 ease-in-out ${
                             fromFocused ? 'placeholder:opacity-0' : 'placeholder:opacity-100'
                         }`}
                         placeholder="Цена от"
@@ -43,7 +43,7 @@ export const PricePopup = () => {
                         Цена до
                     </span>
                     <input
-                        className={`w-full bg-transparent outline-0 ring-0 text-white placeholder:text-white transition-all duration-200 ease-in-out ${
+                        className={`w-full bg-transparent outline-0 ring-0 text-white placeholder:text-[#FFFFFF99] transition-all duration-200 ease-in-out ${
                             toFocused ? 'placeholder:opacity-0' : 'placeholder:opacity-100'
                         }`}
                         placeholder="Цена до"

@@ -9,22 +9,22 @@ export const RentSkinBlock = () => {
                 </div>
                 <p className="text-[16px] z-[2] text-[#FFFFFF99]">ID: 453</p>
             </div>
-            <div className="relative mt-[-24px] w-[208px] h-[215px]">
+            <div className="relative mt-[-24px] w-[197px] h-[200px]">
                 <div className="absolute inset-0 z-[1] rounded-full bg-[#1E1E2F] blur-2xl"/>
                 <img
-                    className="relative w-[208px] h-[215px] z-[2]"
+                    className="relative w-[197px] h-[200px] z-[2]"
                     src="/img/mac.png"
                     alt="MAC-10 Neon Rider"
                 />
             </div>
-            <h6 className="font-golos z-[2] text-[#FFFBFF] text-[20px]">MAC-10 | Neon Rider <span
+            <h6 className="font-golos z-[2] text-[#FFFBFF] text-[19px]">MAC-10 | Neon Rider <span
                 className="text-[14px]">(FN)</span></h6>
-            <div className='flex items-center mt-4 w-full gap-2 p-3 border-t-[1px] border-b-[1px] border-[#312E40]'>
+            <div className='flex items-center h-[43px] mt-4 w-full gap-2 p-3 border-t-[1px] border-b-[1px] border-[#312E40]'>
                 <img src="/img/calendar.svg" alt="calendar"/>
                 <p className="text-[16px] font-golos text-[#FFFFFF99]">Истекла: <span
                     className="font-medium">25/09/2025</span></p>
             </div>
-            <div className='flex items-center rounded-b-[18px] w-full gap-2 p-3 border-[#312E40]'>
+            <div className='flex items-center h-[43px] rounded-b-[18px] w-full gap-2 p-3 border-[#312E40]'>
                 <img src="/img/gray-card.svg" alt="calendar"/>
                 <p className="text-[16px] font-golos text-[#FFFFFF99]">Сумма: <span
                     className="font-medium">1,355 ₽</span></p>

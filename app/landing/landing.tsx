@@ -7,7 +7,7 @@ import {RentProcess} from "../../components/rent-proccess/rent-process";
 
 export default function Landing() {
 	return (
-		<div className="flex flex-col items-center gap-[120px] z-10">
+		<div className="flex flex-col mt-[75px] items-center gap-[120px] z-10">
 			<Hero/>
 			<RentProcess/>
 			<Streamers/>

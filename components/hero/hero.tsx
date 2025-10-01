@@ -1,4 +1,5 @@
 import { HeroBtns } from "./hero-btns"
+import {Card} from "./card";
 
 export const Hero = () => {
 	return (
@@ -8,7 +9,9 @@ export const Hero = () => {
 				<p className="text-[24px] text-[#D9D9D9] font-golos">Арендуй скины в пару кликов пока другие парятся с покупкой и продажей</p>
 				<HeroBtns/>
 			</div>
-			<img className="w-[620px] h-[500px]" src="/img/cards.png" alt="cards" />
+			<Card/>
+
+			<div className="absolute z-[0] right-[-300px] top-[-100px] blur-[216px] w-[866px] faq-glow rounded-full  h-[1027px]"/>
 		</div>
 	)
 }
