@@ -1,6 +1,7 @@
 import {AccountInfo} from "../../components/account/account-info";
 import {RefSystem} from "../../components/account/ref-system";
 import {Settings} from "../../components/account/settings";
+import {RentHistory} from "../../components/account/rent-history";
 
 export default function Account() {
     return (
@@ -9,7 +10,10 @@ export default function Account() {
                 <AccountInfo/>
                 <RefSystem/>
             </div>
-            <Settings/>
+            <div className="flex flex-col gap-4">
+                <Settings/>
+                <RentHistory/>
+            </div>
         </div>
     )
 }

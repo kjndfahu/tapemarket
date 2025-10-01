@@ -38,3 +38,8 @@ export interface FooterItem {
   title:string
   link:string
 }
+
+export interface ModalProps{
+  setIsOpen:(isOpen:boolean) => void
+  isOpen:boolean;
+}
