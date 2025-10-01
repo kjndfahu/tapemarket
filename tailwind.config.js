@@ -5,6 +5,20 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        floatLg: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite',
+        floatLg: 'floatLg 5s ease-in-out infinite',
+      },
       colors: {
         primary: '#FFFFFF',
         secondary: '#D9D9D9',

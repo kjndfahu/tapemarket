@@ -1,15 +1,18 @@
-import { Footer } from "components/footer/footer";
-import { Header } from "components/header/header";
+
 import { Hero } from "components/hero/hero";
+import {Faq} from "../../components/faq/faq";
+import {Info} from "../../components/info/info";
+import {Streamers} from "../../components/streamers/streamers";
+import {RentProcess} from "../../components/rent-proccess/rent-process";
 
 export default function Landing() {
 	return (
-		<div className="px-14">
-			<Header/>
+		<div className="flex flex-col items-center gap-[120px] z-10">
 			<Hero/>
-			<Footer/>
-
-			{/* <img className="absolute top-0 w-[100vw] z-[1]" src="/img/bg-landing.png" alt="bg" /> */}
+			<RentProcess/>
+			<Streamers/>
+			<Info/>
+			<Faq/>
 		</div>
 	);
 }

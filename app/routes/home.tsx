@@ -9,5 +9,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Landing />;
+  return (
+      <div className="relative">
+        <div aria-hidden className="fixed inset-0 -z-[1] pointer-events-none bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url('/img/bg-landing.png')" }} />
+        <Landing />
+      </div>
+  );
 }
